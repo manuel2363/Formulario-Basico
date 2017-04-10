@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html lang="es">
+    <head>
+	
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+    </head>
+	
+    <body>
+
+		<hgroup>
+		   <center><h1>Formulario Para Modificar</h1></center>
+		  <!--<h2>For a living planet</h2>-->
+		</hgroup>
+       <form name="form1" method="post" action="update.php">
+	   
+	   <table width="30%" align="center" border="0" cellspacing="1" cellpadding="2">
+			<tr>
+				<td>
+					<center>
+						Nacionalidad:
+					</center>
+				</td>
+				<td>
+				<input type="radio" name="nacio" value="V">V-
+				<input type="radio" name="nacio" value="E">E-
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						Cedula:
+					</center>
+				</td>
+				<td>
+				<input type="number" size="15" maxlength="15" required="required" placeholder="Cedula" name="cedul">
+				</td>
+			</tr>
+		</table>
+</br>
+	   <center><input type="submit" value="Enviar"></center>
+        
+		<!--
+		<select name="cars">
+		<option value="volvo">Volvo</option>
+		<option value="saab">Saab</option>
+		<option value="fiat">Fiat</option>
+		<option value="audi">Audi</option>
+		</select>
+		-->
+        
+    </body>
+</html>

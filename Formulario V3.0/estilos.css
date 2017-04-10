@@ -1,0 +1,148 @@
+/*@charset "utf-8";*/
+/* CSS Document */
+root{
+display:block;
+}
+*{
+	margin:0;
+	padding:0;
+	}
+	
+	ul, ol
+	{
+		list-style:none;
+	}
+		
+	header {
+	width:100%;
+	}
+	
+	nav {
+	width:700px;
+	margin:20px auto;
+	overflow:hidden;
+	border-radius:30px;
+	/*background:#797979;*/
+	border-bottom:1px solid #555555;
+	
+	background: #8b8b8b; /* Old browsers */
+	background: -moz-linear-gradient(top,  #8b8b8b 0%, #6a6a6a 50%, #5e5e5e 51%, #717171 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8b8b8b), color-stop(50%,#6a6a6a), color-stop(51%,#5e5e5e), color-stop(100%,#717171)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #8b8b8b 0%,#6a6a6a 50%,#5e5e5e 51%,#717171 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #8b8b8b 0%,#6a6a6a 50%,#5e5e5e 51%,#717171 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #8b8b8b 0%,#6a6a6a 50%,#5e5e5e 51%,#717171 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #8b8b8b 0%,#6a6a6a 50%,#5e5e5e 51%,#717171 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b8b8b', endColorstr='#717171',GradientType=0 ); /* IE6-9 */
+
+	}
+	
+	.menu {
+		width:100%;
+		display:table;
+		table-layout:fixed;
+		float:left;
+		transition:all .5s ease;
+		}
+		
+	.menu li {
+		display:table-cell;
+		overflow:hidden;
+		width:100%;
+		border-right:1px solid #5c5c5c;
+		border-left:1px solid rgba(255,255,255,.2);
+		}
+		
+	.menu li:first-child {
+		border-left:none;
+		}
+		
+	.menu li:first-child:hover {
+		border-left:none;
+		}
+		
+	.menu li a {
+		color:#fff;
+		display:block;
+		font-family:"Myriad Pro", Arial;
+		font-size:14px;
+		padding:10px 0;
+		text-align:center;
+		text-decoration:none;
+		text-shadow:1px 1px 0px rgba(0,0,0,.3);
+		}
+		
+	.menu li:hover {
+		background:rgba(0,0,0,.3);
+		border-right:1px solid transparent;
+		border-left:1px solid transparent;
+		border-bottom:none;
+		}
+		
+	.menu li:active {
+		background:rgba(0,0,0,.3);
+		box-shadow:inset 0px 3px 2px rgba(0,0,0,1);
+		}
+
+	body {
+		display: block;
+	/*background-image: url("tufondodegradado.gif");/* Fondo de la pagina con una imagen*/
+	/*background-color: #FFFFFF;/*fondo de la pagina por codigo */
+		background: linear-gradient( DeepSkyBlue, SlateBlue); /* colores del degradado */
+	/*background: linear-gradient( green  , yellow , red); /* colores del degradado */
+		background-repeat: no-repeat; /* Para que no se repitan los colores mas de 1 vez*/
+		background-attachment: fixed; /* Para que el fondo abarque toda la pagina*/
+	/*radial-gradient(#0f0, #06f);*/
+	}
+	
+	#container{
+		text-align:left;
+		width:800px;
+		/*background:#FFFFFF;*/
+		margin:auto;
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+		margin: 0 auto -4em;
+		 
+		}
+		
+	#cuerpo{
+		margin: 10px 0px 10px 0px;
+		height:100%;
+	}
+	#lateral{
+		width: 135px;
+		/*background:#FFFFFF;*/
+		float:left;
+		margin:auto;
+	}
+	#otrolado{
+		width: 145px;
+		/*background:#FFFFFF;*/
+		float: right;
+	}
+	#principal{
+		margin-left:140px;
+		margin-top:auto;
+		/*background-color: #ffffff;*/
+		padding: -10px 0px 0px 0px;
+		width: 510px;
+		text-align:justify;
+		_height:1%;
+		height:1%;
+	}
+
+	#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+	width:99%;
+	position: absolute;
+	bottom: 0 !important;
+	bottom: -1px;
+    text-align:center;
+    padding:5px; 
+	}
+	img.pequeña{width: 50px; height: 50px;}
+ img.mediana{width: 100px; height: 100px;}
+ img.grande{width: 200px; height: 200px;}

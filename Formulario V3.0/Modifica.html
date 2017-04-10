@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html lang="es">
+    <head>
+	
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+    </head>
+	
+    <body>
+
+		<hgroup>
+		   <center><h1>Formulario</h1></center>
+		  <!--<h2>For a living planet</h2>-->
+		</hgroup>
+       <form name="form1" method="post" action="insertar.php">
+	   
+	   <table width="30%" align="center" border="0" cellspacing="1" cellpadding="2">
+<tr>
+				<td>
+					<center>
+						Nombre: 
+					</center>
+				</td>
+				<td>
+					<input autofocus  type="text" size="20" maxlength="50" required="required" placeholder="Ingrese Nombre" name="nombre">
+					<span class="error">* <?php echo $firstnameErr;?></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						Apellido: 
+					</center>
+				</td>
+				<td>
+					<input type="text" size="20" maxlength="50" required="required" placeholder="Ingrese Apellido" name="apelli">
+					<span class="error">* <?php echo $lastnameErr;?></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						Nacionalidad:
+					</center>
+				</td>
+				<td>
+				<input type="radio" name="nacio" value="V">V-
+				<input type="radio" name="nacio" value="E">E-
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						Cedula:
+					</center>
+				</td>
+				<td>
+				<input type="number" size="15" maxlength="15" required="required" placeholder="Cedula" name="cedul">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						Fecha de Nacimiento: 
+					</center>
+				</td>
+				<td>
+				<input type="date" required="required" name="bdy">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						Edad: 
+					</center>
+				</td>
+				<td>
+				<input type="number" min="18" max="120" required="required" name="edad">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						Genero: 
+					</center>
+				</td>
+				<td>
+				<input type="radio" name="gener" value="Masculino">Masculino
+				<input type="radio" name="gener" value="Femenino">Femenino
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						Dirección: 
+					</center>
+				</td>
+				<td>
+				<input type="text" size="25" maxlength="100" required="required" placeholder="Dirección" name="direc">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						Telefono:
+					</center>
+				</td>
+				<td>
+				<input type="tel" placeholder="(xxxx) xxx-xxxx" name="usrtel">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						E-mail:
+					</center>
+				</td>
+				<td>
+				<input type="email" placeholder="email@servidor.com" name="email">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						Web:
+					</center>
+				</td>
+				<td>
+				<input type="url" name="homepage">
+				</td>
+			</tr>
+		</table>
+</br>
+	   <center><input type="submit" value="Enviar"></center>
+        
+		<!--
+		<select name="cars">
+		<option value="volvo">Volvo</option>
+		<option value="saab">Saab</option>
+		<option value="fiat">Fiat</option>
+		<option value="audi">Audi</option>
+		</select>
+		-->
+        
+    </body>
+</html>
