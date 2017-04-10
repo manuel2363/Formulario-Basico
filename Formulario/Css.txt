@@ -1,0 +1,53 @@
+Cascade style sheet css
+
+*se vale de Selectores
+	<p Id="parrafo">Hola</p>
+	
+1)Los selectores permiten posicionarte en un elemento de html en particular
+estan los selectores base o tipo
+
+p{ <!--/*aplica en todos los tipos 'P'*/-->
+font-siza: 15px;
+}
+
+ó
+
+h1,h2,h3{ <!--/*aplica en todos los 'h1','h2','h3'*/-->
+font-siza: 15px;
+}
+
+2)Id
+3)clase
+4)hijos
+
+elementos en bloques con css
+h1,h2,h3,articule{
+display: block;
+}
+
+ó
+
+root{
+display:block;
+}
+--------------------
+para crear una regla se utiliza el signo # (numeral) seguido del nombre de un id
+y se aplicaran las reglas solo y unicamente para ese ID y todo lo que este dentro de el.
+
+#parrafo{
+
+}
+------------------------
+
+cuando se utiliza una regla .(punto) el nombre de una clase sera aplicada la regla a esa clase
+
+.content{
+}
+-----------------------
+
+el -> se utiliza para apuntar al hijo de la clase padre, y se aplica solo al div o la clase donde se apunta
+
+.content->.leadin{
+}
+--------------------------
+
